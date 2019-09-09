@@ -1,0 +1,7 @@
+.idea
+__pycache__
+.DS_Store
+.vscode
+log/qa_log.log.2019-04-25
+test_api.py
+*.log

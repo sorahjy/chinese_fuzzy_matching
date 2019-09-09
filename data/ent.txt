@@ -1,30 +1,3 @@
-# chinese_fuzzy_matching
-Chinese fuzzy entity matching with prefix tree and distance editing
-
-100行中文模糊实体识别
-
-### Requirements
-* bottle==0.12.16
-* jieba==0.39
-* gevent==1.3.0
-
-### How to run server?
-
-* python rest.py port
-* eg: rest.py 80
-
-### Result
-
-* 诺安基金管理有限公司怎么样 ['诺安基金管理有限公司']
-* 建信战略的经理是谁？ {'建信战略': [('建信战略A', 0.94), ('建信战略C', 0.94)]}
-* 赎回华夏长成需要多少钱？ {'华夏长成': [('华夏成长', 0.6699999999999999)]}
-* 汇添富年丰的基金号是什么？ {'汇添富年丰': [('汇添富年年丰C', 0.9128571428571428), ('汇添富年年丰A', 0.9128571428571428)]}
-* 交银3价值Etf连接是什么基金？ {'交银3价值Etf连接': [('交银300价值ETF联接', 0.8533333333333333)]}
-* 大成景H恒现在托管费如何收 {'大成景H恒': [('大成景恒', 0.796)]}
-
-
-### Entities
-
 广发资源
 长城新视野A
 长安基金管理有限公司
@@ -437,4 +410,3 @@ Chinese fuzzy entity matching with prefix tree and distance editing
 交银施罗德基金管理有限公司
 南方宝元
 银华永兴A
-
