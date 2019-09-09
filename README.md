@@ -11,8 +11,8 @@ Chinese fuzzy entity matching with prefix tree and distance editing
 ### How to run server?
 
 * python api.py port
-
-* eg: 
+* 
+* USAGE: 
 * python api.py 6657
 * url get：localhost:6657/v1/fuzzy?query=我现在能不能买上投安丰
 * return：
