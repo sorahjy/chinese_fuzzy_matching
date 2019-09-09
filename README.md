@@ -8,6 +8,9 @@ Chinese fuzzy entity matching with prefix tree and distance editing
 * jieba==0.39
 * gevent==1.3.0
 
+### How to use
+* Replace "data/ent.txt" with your own entity list, and the new file's format should be the same as the old one.
+
 ### How to run server?
 
 * python api.py port
