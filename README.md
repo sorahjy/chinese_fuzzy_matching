@@ -10,9 +10,42 @@ Chinese fuzzy entity matching with prefix tree and distance editing
 
 ### How to run server?
 
-* python rest.py port
-* eg: rest.py 80
+* python api.py port
 
+* eg: 
+* python api.py 6657
+* url get：localhost:6657/v1/fuzzy?query=我现在能不能买上投安丰
+* return：
+{
+  "ret": {
+    "上投安丰": [
+      [
+        "上投安丰C",
+        0.94
+      ],
+      [
+        "上投安丰A",
+        0.94
+      ],
+      [
+        "上投安通C",
+        0.738
+      ],
+      [
+        "上投安通A",
+        0.738
+      ]
+    ]
+  }
+}
+* url get：localhost:6657/v1/exact?query=我现在能不能买上投安丰A
+* return ：
+{
+  "ret": [
+    "上投安丰A"
+  ]
+}
+I 
 ### Result
 
 * 诺安基金管理有限公司怎么样 ['诺安基金管理有限公司']
