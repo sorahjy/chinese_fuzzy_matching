@@ -5,7 +5,7 @@ VERBOSE = False
 
 
 class Trie:
-    def __init__(self, dict_file=None, suffix_num=0):
+    def __init__(self, dict_file=None, suffix_num=2):
         self.words = []
         self.words_idx = {}
         self.tnext = [{}]
@@ -127,7 +127,8 @@ class Trie:
     def exact_search(self, Q, longest_mention=20):  # TODO: optimization with ac-machine
         splits = [0]
         lasteng = False
-        for ii in range(len(Q.lower())):
+        Q = Q.lower()
+        for ii in range(len(Q)):
             if 'a' <= Q[ii] <= 'z' or '0' <= Q[ii] <= '9':  # 连续的数字或英文当作一个整体
                 if lasteng: continue
                 lasteng = True
